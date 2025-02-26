@@ -1,0 +1,841 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartzio-Multipurpose eCommerce</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logo-cartzio.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <main>
+
+        <!-- home -->
+
+        <div id="home">
+
+            <!-- navbar -->
+
+            <nav class="fixed z-50 transition-all duration-300 bg-red-500" id="header">
+                <div class="w-screen flex flex-wrap items-center justify-between mx-auto lg:px-20 px-7 py-4">
+                    <div class="flex text-center items-center ">
+                        <a href="home.html" class=" w-16 h-16  ">
+                            <img src="images/WhatsApp Image 2024-08-21 at 23.54.12_4490d33c.jpg"
+                                class="rounded-full w-full h-16 " alt="Cartzio Logo" />
+                        </a>
+                        <p class="text-white font-medium text-2xl ml-2">British Institute</p>
+                    </div>
+                    <button data-collapse-toggle="navbar-default" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-orange-500 rounded-lg md:hidden hover:bg-orange-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                        <ul
+                            class="  flex flex-col p-4 md:p-0 mt-4 border-2 border-orange-500 rounded-lg md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 items-center md:bg-transparent bg-orange-100">
+                            <li>
+                                <a href="#home"
+                                    class="block py-2  text-black bg-white rounded md:bg-transparent  md:text-orange-500 hover:text-white-300 md:p-0 dark:text-white md:dark:text-blue-500"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about"
+                                    class="block py-2 text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-400 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                            </li>
+                            <li>
+                                <a href="#services"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Service</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</a>
+                            </li>
+                            <li>
+                                <a href="#portfolo"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portfolio
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Price
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Review
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Team
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href="#belog"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Belog
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact
+                                    us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <script>
+                document.addEventListener('scroll', function () {
+                    const header = document.getElementById('header');
+                    if (window.scrollY > 50) {
+                        header.classList.add('bg-blue-500', 'shadow-md');
+                    } else {
+                        header.classList.remove('bg-blue-500', 'shadow-md');
+                    }
+                });
+            </script>
+
+            <!-- carousel -->
+
+            <div id="home" class="relative">
+                <!-- Carousel -->
+                <div id="default-carousel" class="h-[80vh]" data-carousel="slide">
+                    <div class="relative h-full overflow-hidden">
+                        <!-- Carousel Items -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="images/1.jpg" class="w-full h-full object-cover" alt="Slide 1">
+                            <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="images/2.jpg" class="w-full h-full object-cover" alt="Slide 2">
+                            <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="images/3.jpg" class="w-full h-full object-cover" alt="Slide 3">
+                            <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="images/4.jpg" class="w-full h-full object-cover" alt="Slide 4">
+                            <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="images/1.jpg" class="w-full h-full object-cover" alt="Slide 5">
+                            <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+                        </div>
+                    </div>
+                    <!-- Indicators -->
+                    <div class="absolute z-30 flex space-x-3 bottom-5 left-1/2 transform -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full bg-white opacity-75"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white opacity-75"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white opacity-75"
+                            data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white opacity-75"
+                            data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full bg-white opacity-75"
+                            data-carousel-slide-to="4"></button>
+                    </div>
+                    <!-- Controls -->
+                    <button type="button" class="absolute top-0 left-0 z-30 h-full px-4 text-white focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 opacity-75 hover:bg-gray-600">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30 h-full px-4 text-white focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 opacity-75 hover:bg-gray-600">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Carousel Overlay Content -->
+                <div class="absolute inset-0 z-40 flex flex-col items-center justify-center text-center">
+                    <img src="images/lo1.png" alt="Logo" class="w-16 mx-auto mb-4">
+                    <h2 class="text-4xl font-bold text-white">British Institute</h2>
+                    <p class="text-lg font-semibold text-white mt-2">Cultivating leaders for a better tomorrow...</p>
+                    <p class="text-lg font-semibold text-white mt-2">Inspiring a passion for lifelong learning.</p>
+                    <div class="mt-6 space-x-4">
+                        <a href="#demos" class="px-6 py-3 bg-red-600 text-white rounded-lg font-semibold">Apply Now</a>
+                        <a href="https://1.envato.market/cartzio-html" target="_blank"
+                            class="px-6 py-3 border border-blue-600 text-white rounded-lg hover:bg-blue-500 font-semibold">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- home demos -->
+        <section id="about" class="text-gray-600 body-font overflow-hidden">
+            <div class="  mx-auto">
+                <div class="lg:w-full mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                        src="images/about1.jpg">
+                    <div class="lg:w-1/2 w-full lg:pl-10 py-16 px-12 lg:mt-0">
+                        <div class="flex items-center text-center">
+                            <hr class="w-12 border-red-500 border-b-2 rounded-xl"><span
+                                class="mb-4 text-red-500 ml-2 font-bold text-2xl">.</span>
+                            <p class="text-gray-700 text-2xl mb-3 ml-3 font-sans">Learn About Me</p>
+                        </div>
+                        <h1 class="text-gray-700 text-[4rem] title-font font-medium mb-1">10 Years Experience</h1>
+                        <div class="flex mb-4">
+                            <span class="flex items-center">
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-gray-600 ml-3">4 Reviews</span>
+                            </span>
+                            <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+                                <a class="text-gray-500">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="text-gray-500">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="text-gray-500">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                        <p class="leading-relaxed">Fam locavore kickstarter distillery. Mixtape chillwave tumeric
+                            sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim
+                            forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin
+                            listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+                        <div>
+                            <div>
+                                <div class="justify-between mt-5 flex">
+                                    <p>Web Design</p>
+                                    <p>85%</p>
+                                </div>
+                                <div class="relative mt-2">
+                                    <hr class="w-[92vh] border-gray-200 border-b-8 border-t-4 rounded-full">
+                                    <div class="absolute top-0 transition-all duration-300 ease-in-out hover:w-[92vh]">
+                                        <hr class="w-[70vh] border-red-600 border-b-8 border-t-4 rounded-full">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div>
+                                <div class="justify-between mt-5 flex">
+                                    <p>Web Development</p>
+                                    <p>95%</p>
+                                </div>
+                                <div class="relative mt-2">
+                                    <hr class="w-[92vh] border-gray-200 border-b-8 border-t-4 rounded-full">
+                                    <div class="absolute top-0">
+                                        <hr class="w-[80vh] border-red-600 border-b-8 border-t-4 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="justify-between mt-5 flex">
+                                    <p>App Development/p>
+                                    <p>75%</p>
+                                </div>
+                                <div class="relative mt-2">
+                                    <hr class="w-[92vh] border-gray-200 border-b-8 border-t-4 rounded-full">
+                                    <div class="absolute top-0">
+                                        <hr class="w-[76vh] border-red-600 border-b-8 border-t-4 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="justify-between mt-5 flex">
+                                    <p>Web Design</p>
+                                    <p>94%</p>
+                                </div>
+                                <div class="relative mt-2">
+                                    <hr class="w-[92vh] border-gray-200 border-b-8 border-t-4 rounded-full">
+                                    <div class="absolute top-0">
+                                        <hr class="w-[84vh] border-red-600 border-b-8 border-t-4 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="mt-9"> <a href="#" target="_blank"
+                                    class="md:mx-1  scale-125 duration-700 ease-in-out border border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-semibold uppercase md:px-6 px-2  md:py-3 py-1.5 text-sm">Contact
+                                    us</a></div> -->
+
+
+                            <div class="mt-9 flex justify-start px-4">
+                                <a href="#" target="_blank"
+                                    class="custom-button scale-125 duration-700 ease-in-out border-3 border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-semibold uppercase px-6 py-3 text-sm">
+                                    Contact us
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services div  -->
+        <div id="services" class="flex items-center mt-24 justify-center text-center gap-2">
+            <hr class="w-14 border-red-600 border-b-2 rounded-xl">
+            <span class="mb-4 text-red-600 font-bold text-2xl">.</span>
+            <div class="text-gray-600 text-xl font-semibold text-center">MY TEAM</div>
+        </div>
+        <h2 class="text-gray-700 text-4xl font-bold text-center">Awesome Quality Services</h2>
+
+
+
+        <!-- ------------------Service-------------------- -->
+        <div class="py-24 gap-6 flex flex-wrap items-center justify-center   max-w-full mx-auto">
+
+            <div class="grid sm:grid-cols-[30%_auto]  w-[40vw] group cursor-pointer overflow-hidden h-40">
+                <!-- First Div -->
+                <div class="border border-red-500 group">
+                    <div class="items-center text-center mt-14 ">
+                        <i class="fa-solid fa-tv text-[3rem] text-red-500 group-hover:scale-150 duration-500"></i>
+                    </div>
+                </div>
+                <!-- Second Div (Web Design Section) -->
+                <div class="relative items-center  overflow-hidden group">
+                    <!-- Red Background Transition -->
+                    <div
+                        class="absolute -inset-1  bg-red-500 transform -translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0">
+                    </div>
+                    <!-- Text Content -->
+                    <div class="relative z-10 p-4">
+                        <h3 class="text-lg font-semibold">Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="grid sm:grid-cols-[30%_auto]  w-[40vw] group cursor-pointer overflow-hidden h-40">
+                <!-- First Div -->
+                <div class="border border-red-500 group">
+                    <div class="items-center text-center mt-14 ">
+                        <i class="fa-solid fa-computer text-[3rem] text-red-500 group-hover:scale-150 duration-500"></i>
+                    </div>
+                </div>
+                <!-- Second Div (Web Design Section) -->
+                <div class="relative items-center  overflow-hidden group">
+                    <!-- Red Background Transition -->
+                    <div
+                        class="absolute -inset-1  bg-red-500 transform -translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0">
+                    </div>
+                    <!-- Text Content -->
+                    <div class="relative z-10 p-4">
+                        <h3 class="text-lg font-semibold">Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-[30%_auto]  w-[40vw] group cursor-pointer overflow-hidden h-40">
+                <!-- First Div -->
+                <div class="border border-red-500 group">
+                    <div class="items-center text-center mt-14 ">
+                        <i class="fa-solid fa-robot text-[3rem] text-red-500 group-hover:scale-150 duration-500"></i>
+                    </div>
+                </div>
+                <!-- Second Div (Web Design Section) -->
+                <div class="relative items-center  overflow-hidden group">
+                    <!-- Red Background Transition -->
+                    <div
+                        class="absolute -inset-1  bg-red-500 transform -translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0">
+                    </div>
+                    <!-- Text Content -->
+                    <div class="relative z-10 p-4">
+                        <h3 class="text-lg font-semibold">Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-[30%_auto]  w-[40vw] group cursor-pointer overflow-hidden h-40">
+                <!-- First Div -->
+                <div class="border border-red-500 group">
+                    <div class="items-center text-center mt-14 ">
+                        <i class="fa-brands fa-apple text-[3rem] text-red-500 group-hover:scale-150 duration-500"></i>
+                    </div>
+                </div>
+                <!-- Second Div (Web Design Section) -->
+                <div class="relative items-center  overflow-hidden group">
+                    <!-- Red Background Transition -->
+                    <div
+                        class="absolute -inset-1  bg-red-500 transform -translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0">
+                    </div>
+                    <!-- Text Content -->
+                    <div class="relative z-10 p-4">
+                        <h3 class="text-lg font-semibold">Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- -------------------------------  -->
+
+        <!-- Portfolio div  -->
+        <div id="portfolo" class="flex items-center  justify-center text-center gap-2">
+            <hr class="w-14 border-red-600 border-b-2 rounded-xl">
+            <span class="mb-4 text-red-600 font-bold text-2xl">.</span>
+            <div class="text-gray-600 text-xl font-semibold text-center">My Portfolio</div>
+        </div>
+        <h2 class="text-gray-700 text-4xl font-bold text-center">My Excellent Portfolio</h2>
+        <div class="flex justify-center mb-12 gap-1 items-center mx-auto">
+            <div class="mt-9 flex justify-start px-4">
+                <a href="#" target="_blank"
+                    class="custom-button border-2 scale-125 duration-700 ease-in-out border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-medium uppercase px-2 py-2 text-sm">
+                    All
+                </a>
+            </div>
+            <div class="mt-9 flex justify-start px-4">
+                <a href="#" target="_blank"
+                    class="custom-button border-2 scale-125 duration-700 ease-in-out border-red-500 text-white bg-red-500 hover:bg-white hover:text-red-500 font-medium uppercase px-5 py-2 text-sm">
+                    Web Design
+                </a>
+            </div>
+            <div class="mt-9 flex justify-start px-4">
+                <a href="#" target="_blank"
+                    class="custom-button border-2 scale-125 duration-700 ease-in-out border-red-500 text-white bg-red-500 hover:bg-white hover:text-red-500 font-medium uppercase px-5 py-2 text-sm">
+                    Mobile App
+                </a>
+            </div>
+            <div class="mt-9 flex justify-start px-4">
+                <a href="#" target="_blank"
+                    class="custom-button border-2 scale-125 duration-700 ease-in-out border-red-500 text-white bg-red-500 hover:bg-white hover:text-red-500 font-medium uppercase px-5 py-2 text-sm">
+                    Game Dev
+                </a>
+            </div>
+
+        </div>
+        <!-- Cards divs  -->
+
+        <div class="grid grid-cols-3 gap-7 py-10 px-28">
+            <div data-aos="fade-in" data-aos-duration="4000" class=" h-64">
+                <div class="w-full overflow-hidden group">
+                    <div class=" group-hover:translate-x-2 duration-1000 ">
+                        <img src="images/portfolio-1.jpg" alt="">
+                    </div>
+                    <div
+                        class="flex justify-between relative bottom-10 shadowbox bg-white w-72 h-14 ml-8 items-center px-2">
+                        <p class="font-semibold text-lg text-gray-700">Ecommerce Website</p>
+                        <div class=""> <a href="#" target="_blank"
+                                class="md:mx-1 border-2 scale-125 duration-700 ease-in-out  border-red-500 text-white bg-red-500 group-hover:text-red-500 group-hover:bg-white font-medium uppercase  px-3 py-2.5 text-sm"><i
+                                    class="fa-solid fa-plus text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="4000" class=" h-64">
+                <div class="w-full overflow-hidden group">
+                    <div class=" group-hover:translate-x-2 duration-1000 ">
+                        <img src="images/portfolio-3.jpg" alt="">
+                    </div>
+                    <div
+                        class="flex justify-between relative bottom-10 shadowbox bg-white w-72 h-14 ml-8 items-center px-2">
+                        <p class="font-semibold text-lg text-gray-700">JavaScript quiz game</p>
+                        <div class=""> <a href="#" target="_blank"
+                                class="md:mx-1 border-2 scale-125 duration-700 ease-in-out  border-red-500 text-white bg-red-500 group-hover:text-red-500 group-hover:bg-white font-medium uppercase  px-3 py-2.5 text-sm"><i
+                                    class="fa-solid fa-plus text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="4000" class=" h-64">
+                <div class="w-full overflow-hidden group">
+                    <div class=" group-hover:translate-x-2 duration-1000 ">
+                        <img src="images/portfolio-2.jpg" alt="">
+                    </div>
+                    <div
+                        class="flex justify-between relative bottom-10 shadowbox bg-white w-72 h-14 ml-8 items-center px-2">
+                        <p class="font-semibold text-lg text-gray-700">Product Landing Page</p>
+                        <div class=""> <a href="#" target="_blank"
+                                class="md:mx-1 border-2 scale-125 duration-700 ease-in-out  border-red-500 text-white bg-red-500 group-hover:text-red-500 group-hover:bg-white font-medium uppercase  px-3 py-2.5 text-sm"><i
+                                    class="fa-solid fa-plus text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 gap-7 py-10 px-28">
+            <div data-aos="fade-left" data-aos-duration="4000" class=" h-64">
+                <div class="w-full overflow-hidden group">
+                    <div class=" group-hover:translate-x-2 duration-1000 ">
+                        <img src="images/portfolio-6.jpg" alt="">
+                    </div>
+                    <div
+                        class="flex justify-between relative bottom-10 shadowbox bg-white w-72 h-14 ml-8 items-center px-2">
+                        <p class="font-semibold text-lg text-gray-700">Ecommerce Website</p>
+                        <div class=""> <a href="#" target="_blank"
+                                class="md:mx-1 border-2 scale-125 duration-700 ease-in-out  border-red-500 text-white bg-red-500 group-hover:text-red-500 group-hover:bg-white font-medium uppercase  px-3 py-2.5 text-sm"><i
+                                    class="fa-solid fa-plus text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="4000" class=" h-64">
+                <div class="w-full overflow-hidden group">
+                    <div class=" group-hover:translate-x-2 duration-1000 ">
+                        <img src="images/portfolio-4.jpg" alt="">
+                    </div>
+                    <div
+                        class="flex justify-between relative bottom-10 shadowbox bg-white w-72 h-14 ml-8 items-center px-2">
+                        <p class="font-semibold text-lg text-gray-700">JavaScript quiz game</p>
+                        <div class=""> <a href="#" target="_blank"
+                                class="md:mx-1 border-2 scale-125 duration-700 ease-in-out  border-red-500 text-white bg-red-500 group-hover:text-red-500 group-hover:bg-white font-medium uppercase  px-3 py-2.5 text-sm"><i
+                                    class="fa-solid fa-plus text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up-right" data-aos-duration="4000" class=" h-64">
+                <div class="w-full overflow-hidden group">
+                    <div class=" group-hover:translate-x-2 duration-1000 ">
+                        <img src="images/portfolio-5.jpg" alt="">
+                    </div>
+                    <div
+                        class="flex justify-between relative bottom-10 shadowbox bg-white w-72 h-14 ml-8 items-center px-2">
+                        <p class="font-semibold text-lg text-gray-700">Product Landing Page</p>
+                        <div class=""> <a href="#" target="_blank"
+                                class="md:mx-1 border-2 scale-125 duration-700 ease-in-out  border-red-500 text-white bg-red-500 group-hover:text-red-500 group-hover:bg-white font-medium uppercase  px-3 py-2.5 text-sm"><i
+                                    class="fa-solid fa-plus text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fixed pic  -->
+        <div class="max-w-full mx-auto items-center justify-center flex flex-col py-20 bg-[#EF233C] h-auto">
+            <p class="text-[#414141] text-2xl">Awesome Discount </p>
+            <p class="text-[3rem] font-bold text-white">Get <span class="text-[#414141] px-2">30%</span>Discount</p>
+            <p class="w-[48vw] text-center text-gray-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                distinctio sequi unde, deserunt neque
+                cupiditate numquam ut consequuntur voluptatem non corporis accusamus voluptate excepturi dolore totam
+                sint. Quos, ducimus rationeut consequuntur voluptatem non corporis accusamus voluptate excepturi dolore
+                totam
+                sint. Quos, ducimus ratione?</p>
+
+            <div class="mt-9 flex justify-start px-4">
+                <a href="#" target="_blank"
+                    class="custom-button scale-125 duration-700 ease-in-out  border-white text-white border hover:bg-white  hover:text-red-500 font-semibold uppercase px-6 py-3 text-sm">
+                    Contact us
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Belog section strt -->
+        <div id="belog" class="flex items-center mt-16 justify-center text-center gap-2">
+            <hr class="w-14 border-red-600 border-b-2 rounded-xl">
+            <span class="mb-4 text-red-600 font-bold text-2xl">.</span>
+            <div class="text-gray-600 text-xl font-semibold text-center">From Blog</div>
+        </div>
+        <h2 class="text-gray-700 text-4xl mb-10 font-bold text-center">Latest Articles</h2>
+
+        <section class="text-gray-600 body-font">
+            <div class="container px-16 py-24 mx-auto">
+                <div class="flex flex-wrap -m-4">
+
+                    <div data-aos="fade-in" class="p-4 md:w-1/2">
+                        <div class="h-full border-2  border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="lg:h-96 md:h-36 w-full object-cover hover:scale-110 duration-700 object-center"
+                                    src="images/blog-1.jpg" alt="blog">
+                            </div>
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex mt-7 items-center flex-wrap">
+                                    <div class=" flex justify-start px-4">
+                                        <a href="#" target="_blank"
+                                            class="custom-button scale-125 duration-700 ease-in-out border-3 border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-semibold uppercase px-4 py-2 text-sm">
+                                            Read More
+                                        </a>
+                                    </div>
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>1.2K
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                        </svg>6
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="p-4 md:w-1/2">
+                        <div class="h-full border-2  border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <div class="overflow-hidden">
+                                <img class="lg:h-96 md:h-36 w-full object-cover hover:scale-110 duration-700 object-center"
+                                    src="images/blog-2.jpg" alt="blog">
+                            </div>
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex mt-7 items-center flex-wrap">
+
+                                    <div class=" flex justify-start px-4">
+                                        <a href="#" target="_blank"
+                                            class="custom-button scale-125 duration-700 ease-in-out border-3 border-red-500 text-red-500 hover:bg-red-500 hover:text-white font-semibold uppercase px-4 py-2 text-sm">
+                                            Learn More
+                                        </a>
+                                    </div>
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>1.2K
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                        </svg>6
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------------  -->
+
+
+        <!-- fixed pic  -->
+        <div class="max-w-full text-white mx-auto items-center justify-center flex flex-col py-20 bg-[#EF233C] h-auto">
+            <p class=" text-4xl font-bold">Kate Winslet</p>
+            <p class=" text-2xl py-2 font-bold">123 Street, New York, USA</p>
+            <div class="flex items-center">
+                <p class=" text-2xl py-2 font-bold">+012 345 67890
+                </p>
+                <p class="px-5 text-3xl">|</p>
+                <p class=" text-2xl py-2 font-bold">info@example.com</p>
+            </div>
+            <div>
+                <span class="inline-flex sm:ml-auto sm:mt-0 py-3 gap-4 justify-center sm:justify-start">
+
+                    <a class="ml-3 text-white hover:text-gray-600">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-6 h-6 cursor-pointer" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a class="text-white hover:text-gray-600">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class=" text-white hover:text-gray-600">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path
+                                d="M19.615 3.184c-2.325-.293-7.88-.293-10.205 0-2.38.301-4.16 2.077-4.465 4.464-.293 2.325-.293 7.88 0 10.205.305 2.38 2.08 4.164 4.465 4.465 2.325.293 7.88.293 10.205 0 2.38-.305 4.16-2.08 4.465-4.465.293-2.325.293-7.88 0-10.205-.305-2.38-2.08-4.164-4.465-4.464zm-7.615 11.816v-7l6 3.5-6 3.5z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a class="ml-3 text-white hover:text-gray-600">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+
+
+                </span>
+            </div>
+            <hr class="w-[50vw] py-4">
+            <div class="flex items-center">
+                <p class="text-xl sm:ml-4 sm:pl-4  sm:border-gray-200 sm:py-2 hover:text-gray-700 sm:mt-0 mt-4">© Your
+                    Site Name —
+
+                </p>
+                <span><a href="https://twitter.com/knyttneve" class="text-xl ml-1" rel="noopener noreferrer"
+                        target="_blank"> All Right Reserved | Designed By HTML Codex</a></span>
+
+
+            </div>
+        </div>
+
+        <!-- Belog section end -->
+        <!-- jump to top -->
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn"
+            class="fixed bottom-4 right-4 bg-yellow-500 hover:bg-yellow-600 text-white rounded-full p-3 shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+        </button>
+        <a href="#home">
+            <div id="scrollToTopBtn"
+                class="fixed bottom-4 right-4 bg-yellow-500 hover:bg-yellow-600 text-white rounded-full p-3 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                </svg>
+            </div>
+        </a>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+        <!-- scrollToTopBtn -->
+
+        <script>
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    scrollToTopBtn.classList.remove('hidden');
+                    scrollToTopBtn.classList.add('block');
+                } else {
+                    scrollToTopBtn.classList.remove('block');
+                    scrollToTopBtn.classList.add('hidden');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init(
+                {
+                    // Global settings:
+                    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                    initClassName: 'aos-init', // class applied after initialization
+                    animatedClassName: 'aos-animate', // class applied on animation
+                    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                    offset: 50, // offset (in px) from the original trigger point
+                    delay: 700, // values from 0 to 3000, with step 50ms
+                    duration: 1000, // values from 0 to 3000, with step 50ms
+                    easing: 'ease', // default easing for AOS animations
+                    once: false, // whether animation should happen only once - while scrolling down
+                    mirror: false, // whether elements should animate out while scrolling past them
+                    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+                }
+            );
+        </script>
+</body>
+<script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+</html>
